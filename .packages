@@ -39,8 +39,3 @@ if [[ $? == 1 ]]; then
 	sudo apt update && sudo apt install libmikmod3
 fi
 
-source pirathark/.aliasdef
-sleep 0.5
-
-clear
-glow pirathark/.intro.md
