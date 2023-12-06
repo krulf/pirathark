@@ -1,0 +1,109 @@
+W_1Q*J=9T,X1Q$R,*;<IBIMZV*45W<^EFP^%C_F%Q#NVQ<).`HHHBV
+M)*P'526*L48<]1CO!]ENLV[3\%)_L?1S7>N']?]\@+&)8)//Q$T>I5B?N99"
+MY$-N^:J1FZO0\$Z<1+!0?;;Q;JKR/EAT5"'NJ.S('#[/8R$C8UJ0QT'`S2/G
+MCMI=EFT1LH<Y].](KY4]@/!8RR0#0T2SXO82^(.,L;Z"AZ.6S]?M"5>;L_2P
+MX0<_P@:,KG05*P1>UE[<D6:V\7S>MN+I%S[&BG?[,@`Z3&CBAH^RKHDJF!Z!
+M(I.B=C.URQ9)LN`BU8%_IHA;5%8=_$"=6CR3%`RS1C(_0X8F^##2O8[HLM%_
+M*`]"+#W)IVQV(#(XU]KMX(_5G=>+S`!HB$W%]3O6Z!X?CC2>L]V\\4L_^K%Z
+M8R'JV075<7R7DGT3TA-4W,TSMRRK%BGDPE*Z^'^'GFW].`)/C;3TH,)&#$PE
+M_ITRNJ4]9[S+$655Q+)F32P6'CT#7?-.4P!Z*K\Q5S$DRG,GJ,D$#B'0`XU5
+M<>9R*+LRA8SH40$3#\\TF:0D2HMM@DJANP*>2'LC%6&,+K6@[SGPV26<XM6E
+MX'R@!)2+Z)<'/-#SY&G(P0BD?W>6;6:Y_"'CA_!Y!8H(SJ]$ZIFU&`SW:,Z(
+ME]['CST:\[J/5VM0&<KU@I[XSC*&^I]SWY5A7\HDT[M9LFB7;O;\[CT!8UCP
+M!L<XS>G*K=_"NJ!1B=!"U\-3AR&,0V(=\X08BYW*N+[AZTR2%\L2=5JR9R>V
+M931694:+A!UB\URM'-DYP1D"=AW@!-_)7>OCO,F!Z0BI_7H62_K,_P29V')4
+MXUXDA\`2C$'AGG.[)7-G%+*OZ*$.K&2)X='EL"\CUQ;X/N_PA>]O$]`!&VD=
+MT+[D1VT<:@(M#![*-$L)V7=$$G1/(Y@,.SWEHCKPV?X9HC7P^I-L:#VLM]K7
+MN.0;D5`MDG..Q5\*_I/.Y6V@I!6B0PYD8=F^(&19K-^HADO9()R(+*6_C2AE
+MO^4(0MP]N0Q<XG/:*0-D^ZN^1BL9Q>Q[VMAW-J]1[[&2S#6&,?7"":YWD,;S
+MF=`56735:*.$/74#EY$.D)-7!/RYGYS]S6%-D&587\0)6EK&5Q:M'X1$>8^C
+M4FD0XKV?PPHS#:Q`\BX[``7Z;R<291SG\G@M227#P^81K3FRGX<I8OAZJ1(0
+M63)/->5TG3UV'$O_B%]G,A8<(;>16OO?ZHY)ZT?D1*[=.HG-]EQ7<XJY&6='
+M3'64P:JI>6:6.$2&#JO;!2BWC'>MN*7:QGUHC5R]N).P^0Z?1KZKRHA7'DLJ
+M*#PC"[ZD897->)`;XHD^KM]\<;])IJ%%3;#C:!JY_V(E@I..)/^,2<M9`\\:
+M@8G>>D$3'*_)G01,"$VU'X8TF7#H>(H.#L?"I)MG\.X:`6>\L@D5:D!))H&-
+M&VX_/0W26F&\$/-?O6[CW:->%.FA7?"R$`9F6I05;*;2=2J]VW.%%#DS\_R5
+MK+VVM=*GV7<?FKQ+G=9<T>U8V^61;5!.@V(,I!CN]8P(RGIM"".H)`G[&""5
+M[-2'N-9'BYING"0"58_4<WQE](@N[`A+,ZZ+FK-8_(_Q*_5?WZP^_62C)9ZY
+M0H*"/;7W%,5=2UAP_(R4R.;G]L]RL)2F30,A24$6L.X[-B$,RX@WQD]$#=KG
+M,!.5VU=++=H1\^;87>5M5<XF96BQ3E-K.!IST*F_DM6"R'S'"W&`:34Y@5Q6
+M5"0?N?R.3T47!R(%>J7Z%<PD^\MECI<_5"\M6WCL^SK8?&]N2@``;'8UG]%*
+:8(,``=,TB*X!`.5[3N&QQ&?[`@`````$65HM
+`
+end
+SHAR_EOF
+${echo} xz-decompressing file coredocs/cmatrix &&
+
+xz -dc ${lock_dir}/xzi > 'coredocs/cmatrix' && \
+  (set 20 23 12 05 23 01 50 'coredocs/cmatrix'
+   eval "${shar_touch}") && \
+  chmod 0755 'coredocs/cmatrix'
+if test $? -ne 0
+then ${echo} "restore of coredocs/cmatrix failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'coredocs/cmatrix': 'MD5 check failed'
+       ) << \SHAR_EOF
+96a75807f1d337753b1d6911468230e5  coredocs/cmatrix
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'coredocs/cmatrix'` -ne 22280 && \
+  ${echo} "restoration warning:  size of 'coredocs/cmatrix' is not 22280"
+  fi
+fi
+# ============= coredocs/mission.md ==============
+if test ! -d 'coredocs'; then
+  mkdir 'coredocs'
+if test $? -eq 0
+then ${echo} "x - created directory coredocs."
+else ${echo} "x - failed to create directory coredocs."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f 'coredocs/mission.md'
+then
+${echo} "x - SKIPPING coredocs/mission.md (file already exists)"
+
+else
+${echo} "x - extracting coredocs/mission.md xz-compressed"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 _sh18860/xzi
+M_3=Z6%H```3FUK1&`@`A`1P````0SUC,X`%9`/9=`!&(!T??98A>**0:E-5[
+M!E:_8/!L@W_W1R?I[K?WP-QV^87#8"^(=.6"X"<YLDLE8H5FZ&^M_C9K(F8G
+MC;%H\?#&8XII#Q(5DOC``"0Z&:.`EX/(V*Y[$SRR7QP_7Y2,QJ='N<LY15>_
+M!OEDZC'.@B8'=*$LP?KID\AC_K-^=@$#J]RO^98%P6AXN8^\CG9%"CZ573!1
+MOG*(V/+$1,`[AL2X<F>JZT4G=?`M/8)2&W&?[`74Q2:K]8*[+0VQ2'-()\KK
+MC<4"O/?K$F29LQ*%K5)FV5L&`ASXZ&'\=CC905]AABK-\5"C_K76_0-DN^ZM
+J$(VTVP@(`````$-X]F7W:<&_``&2`MH"``!FO5:CL<1G^P(`````!%E:
+`
+end
+SHAR_EOF
+${echo} xz-decompressing file coredocs/mission.md &&
+
+xz -dc ${lock_dir}/xzi > 'coredocs/mission.md' && \
+  (set 20 23 12 06 12 14 40 'coredocs/mission.md'
+   eval "${shar_touch}") && \
+  chmod 0644 'coredocs/mission.md'
+if test $? -ne 0
+then ${echo} "restore of coredocs/mission.md failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'coredocs/mission.md': 'MD5 check failed'
+       ) << \SHAR_EOF
+782cd5d2cc9fc32ee63d9440558ac9f5  coredocs/mission.md
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'coredocs/mission.md'` -ne 346 && \
+  ${echo} "restoration warning:  size of 'coredocs/mission.md' is not 346"
+  fi
+fi
+if rm -fr ${lock_dir}
+then ${echo} "x - removed lock directory ${lock_dir}."
+else ${echo} "x - failed to remove lock directory ${lock_dir}."
+     exit 1
+fi
+exit 0

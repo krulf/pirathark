@@ -1,0 +1,152 @@
+#!/bin/sh
+lock_dir=_sh18860
+MD5SUM=${MD5SUM-md5sum}
+f=`${MD5SUM} --version | egrep '^md5sum .*(core|text)utils'`
+test -n "${f}" && md5check=true || md5check=false
+${md5check} || \
+  echo 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+if test "X$1" = "X-c"
+then keep_file=''
+else keep_file=true
+fi
+echo=echo
+save_IFS="${IFS}"
+IFS="${IFS}:"
+gettext_dir=
+locale_dir=
+set_echo=false
+
+for dir in $PATH
+do
+  if test -f $dir/gettext \
+     && ($dir/gettext --version >/dev/null 2>&1)
+  then
+    case `$dir/gettext --version 2>&1 | sed 1q` in
+      *GNU*) gettext_dir=$dir
+      set_echo=true
+      break ;;
+    esac
+  fi
+done
+
+if ${set_echo}
+then
+  set_echo=false
+  for dir in $PATH
+  do
+    if test -f $dir/shar \
+       && ($dir/shar --print-text-domain-dir >/dev/null 2>&1)
+    then
+      locale_dir=`$dir/shar --print-text-domain-dir`
+      set_echo=true
+      break
+    fi
+  done
+
+  if ${set_echo}
+  then
+    TEXTDOMAINDIR=$locale_dir
+    export TEXTDOMAINDIR
+    TEXTDOMAIN=sharutils
+    export TEXTDOMAIN
+    echo="$gettext_dir/gettext -s"
+  fi
+fi
+IFS="$save_IFS"
+if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null
+then if (echo -n test; echo 1,2,3) | grep n >/dev/null
+     then shar_n= shar_c='
+'
+     else shar_n=-n shar_c= ; fi
+else shar_n= shar_c='\c' ; fi
+f=shar-touch.$$
+st1=200112312359.59
+st2=123123592001.59
+st2tr=123123592001.5 # old SysV 14-char limit
+st3=1231235901
+
+if   touch -am -t ${st1} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st1} && test -f ${f}; then
+  shar_touch='touch -am -t $1$2$3$4$5$6.$7 "$8"'
+
+elif touch -am ${st2} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st2} && test ! -f ${st2tr} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$1$2.$7 "$8"'
+
+elif touch -am ${st3} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st3} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$2 "$8"'
+
+else
+  shar_touch=:
+  echo
+  ${echo} 'WARNING: not restoring timestamps.  Consider getting and
+installing GNU '\''touch'\'', distributed in GNU coreutils...'
+  echo
+fi
+rm -f ${st1} ${st2} ${st2tr} ${st3} ${f}
+#
+if test ! -d ${lock_dir} ; then :
+else ${echo} "lock directory ${lock_dir} exists"
+     exit 1
+fi
+if mkdir ${lock_dir}
+then ${echo} "x - created lock directory ${lock_dir}."
+else ${echo} "x - failed to create lock directory ${lock_dir}."
+     exit 1
+fi
+# ============= coredocs/cmatrix ==============
+if test ! -d 'coredocs'; then
+  mkdir 'coredocs'
+if test $? -eq 0
+then ${echo} "x - created directory coredocs."
+else ${echo} "x - failed to create directory coredocs."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f 'coredocs/cmatrix'
+then
+${echo} "x - SKIPPING coredocs/cmatrix (file already exists)"
+
+else
+${echo} "x - extracting coredocs/cmatrix xz-compressed"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 _sh18860/xzi
+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
+MIO*E\J&\(]XL-]P]N<.?3$(*C@`8(=M1
