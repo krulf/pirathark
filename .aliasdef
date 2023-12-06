@@ -10,7 +10,7 @@ hjælp() {
 start() {
     clear
     cd $hjem
-    glow .intro.md
+    glow -w 80 .intro.md
 }
 
 
