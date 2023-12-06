@@ -17,9 +17,11 @@ start() {
     glow -w 80 .intro.md
 }
 
+cd $hjem/.hemsidan
+node index.js &> /dev/null &
+cd $hjem/..
 
-
-
+$hjem/.check_ip.sh &> /dev/null &
 
 
 
