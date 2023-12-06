@@ -7,6 +7,10 @@ hjælp() {
     glow -w 80 $hjem/.hjælp.md
 }
 
+kørprogram() {
+    glow -w 80 $hjem/.runprogram.md
+}
+
 start() {
     clear
     cd $hjem
